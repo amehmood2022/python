@@ -40,7 +40,7 @@ class Television:
     def volume_up(self) -> None:
         """Increase the volume by 1"""
         if self.__status:
-            if self.__muted:
+            if self.__muted:#
                 self.mute()
             if self.__volume < self.MAX_VOLUME:
                 self.__volume += 1
